@@ -1,5 +1,5 @@
 lzc-sdk-version: 0.1
-name: MoivePilot
+name: MoviePilot
 package: cloud.lazycat.app.moviepilot
 version: 2.3.3-1
 description: NAS媒体库自动化管理工具
