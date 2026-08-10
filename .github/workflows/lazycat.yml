@@ -1,0 +1,20 @@
+name: LazyCat LPK
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  lazycat:
+    uses: ca-x/lazycat-github-action/.github/workflows/lazycat.yml@v1
+    with:
+      operation: auto
+      config: .github/lazycat-action.yml
+      versioned-release-asset: true
+    secrets:
+      APPSTORE_URL: ${{ secrets.APPSTORE_URL }}
+      APPSTORE_TOKEN: ${{ secrets.APPSTORE_TOKEN }}
+      APP_ID: ${{ secrets.APP_ID }}
+      PRIVATE_STORE_GROUP_CODES: ${{ secrets.PRIVATE_STORE_GROUP_CODES }}

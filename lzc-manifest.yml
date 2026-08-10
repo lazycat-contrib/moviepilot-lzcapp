@@ -1,11 +1,3 @@
-lzc-sdk-version: 0.1
-name: MoviePilot
-package: cloud.lazycat.app.moviepilot
-version: 2.3.3-1
-description: NAS媒体库自动化管理工具
-license: GPL_V3
-homepage: https://github.com/jxxghp/MoviePilot
-author: jxxghp
 application:
   background_task: true
   subdomain: moviepilot
@@ -14,8 +6,7 @@ application:
     - /api=http://mp.cloud.lazycat.app.moviepilot.lzcapp:3001
 services:
   mp:
-  #  jxxghp/moviepilot-v2:2.15.6
-    image: registry.lazycat.cloud/boiaoch/jxxghp/moviepilot-v2:7efe4bb4e4018677
+    image: docker.1ms.run/jxxghp/moviepilot-v2:2.15.6
     binds:
       - /lzcapp/var/media:/media
       - /lzcapp/var/moviepilot:/config
