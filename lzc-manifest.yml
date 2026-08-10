@@ -14,6 +14,7 @@ application:
     - /api=http://mp.cloud.lazycat.app.moviepilot.lzcapp:3001
 services:
   mp:
+  #  jxxghp/moviepilot-v2:2.15.6
     image: registry.lazycat.cloud/boiaoch/jxxghp/moviepilot-v2:7efe4bb4e4018677
     binds:
       - /lzcapp/var/media:/media
