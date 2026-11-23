@@ -6,8 +6,8 @@ application:
     - /api=http://mp.cloud.lazycat.app.moviepilot.lzcapp:3001
 services:
   mp:
-    # upstream: docker.io/jxxghp/moviepilot-v2:2.15.6
-    image: docker.1ms.run/jxxghp/moviepilot-v2:2.15.6
+    # upstream: docker.io/jxxghp/moviepilot:3.2.11
+    image: docker.1ms.run/jxxghp/moviepilot:3.2.11
     binds:
       - /lzcapp/var/media:/media
       - /lzcapp/var/moviepilot:/config
