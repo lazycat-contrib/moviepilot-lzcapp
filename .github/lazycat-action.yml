@@ -21,13 +21,13 @@ images:
   - id: moviepilot
     target: service
     service: mp
-    source: docker.io/jxxghp/moviepilot-v2
+    source: docker.io/jxxghp/moviepilot
     channel: stable
     sort: semver
     tag_regex: '^\d+\.\d+\.\d+$'
     delivery:
       mode: mirror
-      image_template: docker.1ms.run/jxxghp/moviepilot-v2:{tag}
+      image_template: docker.1ms.run/jxxghp/moviepilot:{tag}
       require_digest_match: true
 
 stores:
