@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.moviepilot
-version: 3.2.11
+version: 3.2.12
 name: MoviePilot
 description: NAS媒体库自动化管理工具
 license: GPL-3.0
